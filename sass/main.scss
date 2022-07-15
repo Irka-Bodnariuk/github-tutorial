@@ -1,0 +1,125 @@
+@import './utils/variables';
+@import './utils/mixin';
+body {
+  margin: 0;
+  font-family: 'DM Sans';
+}
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.header {
+  position: relative;
+  background-color: $background-section;
+  &__btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+    color: $accent-color;
+    height: 44px;
+    width: 100%;
+    background: $white-color;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 19px;
+    transition: background-color $transition-active;
+    &:hover,
+    &:focus {
+      background-color: $second-btn-color;
+    }
+  }
+  &__icon {
+    margin-left: 27px;
+  }
+}
+.container {
+  padding-top: 8px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200;
+  outline: 1px solid tomato;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+}
+
+.mob-btn,
+.mob-btn-close {
+  margin-left: auto;
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.mob-btn-close {
+  margin-bottom: 26px;
+}
+.mob-menu {
+  position: fixed;
+  background-color: $background-memu;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform $transition-active, opacity $transition-active,
+    visibility $transition-active;
+
+  &__list {
+  }
+  &__item {
+    padding-left: 20px;
+    border-bottom: 1px solid #e18298;
+    height: 42px;
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      border-top: 1px solid #e18298;
+    }
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+
+    color: $white-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+.mob-menu.is-hidden {
+  transform: translateX(100%);
+}
+
+.curent {
+  color: $accent-color;
+}
+.mob__container {
+  padding: 20px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

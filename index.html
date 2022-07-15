@@ -3,40 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Git and GitHub</title>
   </head>
   <body>
-    <section>
-      <h1>Hi!</h1>
-      <p>Привіт!</p>
-      <img src="" alt="" />
-    </section>
-    <section>
-      <h2>Вірш</h2>
-      <pre>
-  Життя - це посмішка уранці,
-  Це фотографія у рамці,
-  Життя - це посмішка крізь сльози,
-  Життя - це сонце і морози!
-</pre
-      >
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="./index.html">
+            <svg class="logo-header" width="199" height="50">
+              <use href="./images/iqons.svg#icon-logo"></use>
+            </svg>
+          </a>
 
-      <pre>
-  Життя - це квіти навесні,
-  Життя - це жарти і пісні.
-  Життя - це кайф, як не крути,
-  Його нам варто перейти!
-</pre
-      >
+          <!-- <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="#index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#how-it’s-made?">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#how-it’s-made?"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#products">Our products</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#our-Locations">Contact</a>
+            </li>
+          </ul>-->
+        </nav>
+        <!-- <button type="button" class="header__btn">Buy now</button> -->
+        <button type="button" class="mob-btn">
+          <svg
+            class="mob-icon"
+            width="20"
+            height="18"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/iqons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="mob__container">
+          <button type="button" class="mob-btn-close">
+            <svg class="mob-close-icon" width="14" height="14">
+              <use href="./images/iqons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-      <pre>
-  Життя - гуляти під дощем,
-  Бути з заплаканим лицем.
-  Життя - в собі знайти все ж сили,
-  Щоб просто жити...мати крила!
-</pre
-      >
-    </section>
+          <button type="button" class="header__btn">
+            Buy now
+            <!-- <span>&#62;</span> -->
+            <svg class="header__icon" width="6" height="8">
+              <use href="./images/iqons.svg#icon-btn"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="box">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link curent" href="#index.html">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#how-it’s-made?">About us</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#How it’s made?"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#products">Our products</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#our-Locations">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- <section class="hero">
+      <div class="container">
+        <div class="hero__buner">
+          <h1 class="hero__title">ice cream made with <span>passion</span></h1>
+          <a href="#products"
+            ><button type="button" class="btn">Products</button></a
+          >
+          <a href="#how it’s made?"
+            ><button type="button" class="btn">How it’s made?</button></a
+          >
+        </div>
+        <div class="hero__content">
+          <img class="hero__fon" src="#" alt="milk" />
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <img class="" src="#" alt="ice" />
+        </div>
+        <div class="hero__">
+          <ul class="">
+            <li class="">
+              16
+              <br />
+              <span>cafes</span>
+            </li>
+            <li class="">
+              23
+              <br />
+              <span>food trucks</span>
+            </li>
+          </ul>
+          <img class="" src="#" alt="girl" />
+        </div>
+      </div>
+    </section> -->
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
